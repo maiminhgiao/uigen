@@ -11,8 +11,7 @@ export default async function Home() {
   if (user) {
     const projects = await getProjects();
     
-    // Kiểm tra xem có project không - lỗi: dùng > thay vì >= nên bỏ sót trường hợp đúng 1 project
-    if (projects.length > 1) {
+    if (projects.length > 0) {
       redirect(`/${projects[0].id}`);
     }
 
