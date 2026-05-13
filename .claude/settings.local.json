@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"H:\\\\claude-demo\\\\uigen\\\\src\" -Recurse -File | ForEach-Object { $_.FullName.Replace\\(\"H:\\\\claude-demo\\\\uigen\\\\\", \"\"\\) })",
+      "PowerShell(Get-ChildItem \"H:\\\\claude-demo\\\\uigen\\\\prisma\" -File | ForEach-Object { $_.Name })",
+      "Bash(npx vitest *)",
+      "Bash(Get-Content \"C:\\\\Users\\\\giaomm\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\H--claude-demo-uigen\\\\5a90678f-16ba-4a14-b1e2-c9b0e16d3f42\\\\tasks\\\\bqz2hhigh.output\" -Wait)",
+      "Bash(Select-String -Pattern \"Local|Ready|Error|error\" --line-buffered)",
+      "Bash(Get-Content *)",
+      "Bash(npm run *)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_close",
+      "mcp__playwright__browser_tabs",
+      "mcp__playwright__browser_run_code_unsafe",
+      "PowerShell(Get-Process *)"
+    ]
+  }
+}
